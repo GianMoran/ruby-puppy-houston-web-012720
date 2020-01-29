@@ -18,7 +18,6 @@ class Dog
    @@all.map { |x| puts x.name}
   end
   def save
-  # @@all.map { |x| x.name}
     @@all << self 
   end
 
