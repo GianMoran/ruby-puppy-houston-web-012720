@@ -4,7 +4,7 @@ class Dog
   attr_accessor :name
   def initialize(name)
     @name = name 
-    @@all << self 
+    # @@all << self 
   end
 
   def self.all
@@ -17,8 +17,8 @@ class Dog
    @@all.map { |x| puts x.name}
   end
   def save
-   @@all.map { |x| x.name}
-  
+  # @@all.map { |x| x.name}
+    @@all << self 
   end
 
 end
